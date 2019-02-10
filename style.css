@@ -1,0 +1,168 @@
+html,
+body,
+#heroimage {
+  width: 100%;
+  height: 100%;
+  font-family: "Source Sans Pro", sans-serif;
+  overflow-x: hidden;
+}
+
+.brand-logo {
+  padding-top: 5px !important;
+  padding-left: 10px !important;
+}
+
+nav ul li:hover {
+  background-color: yellow;
+}
+
+.hero-section {
+  background: url("./assets/hero.png") 100% no-repeat;
+  background-size: cover;
+  height: 100%;
+  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.hero-section-text {
+  margin: 25px;
+}
+
+.hero-image-text {
+  position: relative;
+}
+
+#heroimage {
+  height: 510px;
+  background-color: #f0eeee;
+  position: relative;
+}
+
+a {
+  color: black !important;
+}
+
+/* List's section */
+.weclean-lists--wrap {
+  display: flex;
+  justify-content: center;
+  font-size: 0.9em;
+}
+
+@media screen and (max-width: 321px) {
+  .weclean-lists--wrap {
+    font-size: 0.7em;
+  }
+}
+ul {
+  margin-left: 50px;
+}
+
+.weclean {
+  background-color: #f0eeee;
+  padding-top: 25px;
+  height: 400px;
+  position: relative;
+}
+
+/* Services */
+.services-header {
+  padding-bottom: 25px;
+}
+
+/* Text section */
+.textSection {
+  background: url("./assets/textSection.png") 100% no-repeat;
+  background-size: cover;
+  text-align: center;
+  height: 600px;
+  justify-content: center;
+  position: relative;
+  text-align: right;
+}
+
+.textSection_centerText {
+  position: absolute;
+  top: 35%;
+  font-family: "Source Sans Pro", sans-serif;
+  height: 20;
+}
+
+.textSection_centerText p {
+  opacity: 0.8;
+  background-color: white;
+  padding: 15px;
+  margin: 25px;
+}
+
+.textSection h5 {
+  opacity: 0.8;
+  background-color: white;
+  padding: 15px;
+}
+
+.s12 {
+  padding-top: 50px !important;
+}
+
+.textRow {
+  margin: 25px !important;
+}
+
+.btn {
+  background-color: #993333 !important;
+  border-radius: 40px 40px 40px 40px !important;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.footerWrap {
+  background-color: #f0eeee;
+}
+
+h6 {
+  line-height: 1.5 !important;
+}
+
+.luck {
+  padding-left: 40px;
+}
+
+@media only screen and (max-width: 568px) {
+  .luck {
+    padding-left: 15px;
+  }
+}
+
+.contactForm {
+  display: flex;
+  justify-content: center;
+}
+/* label focus color */
+.input-field input:focus + label {
+  color: yellow !important;
+}
+/* label underline focus color */
+.row .input-field input:focus {
+  border-bottom: 1px solid yellow !important;
+  box-shadow: 0 1px 0 0 yellow !important;
+}
+
+form {
+  width: 80% !important;
+  padding-bottom: 50px;
+}
