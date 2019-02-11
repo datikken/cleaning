@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -27,6 +29,8 @@
                     <li><a href="#1">Services</a></li>
                     <li><a href="#2">About us</a></li>
                     <li><a href="#3">Contact us</a></li>
+                    <li>
+                        <a href="tel:7778921843" class="flow-text">7778921843</a></li>
                 </ul>
             </div>
         </nav>
@@ -35,10 +39,9 @@
         <div class="hero-section">
             <div class="hero-section-text">
                 <h2>Entrust commercial cleaning to the <br />professionals</h2>
-                <a href="#3">
+                <a href="#3" id="contactLink">
                     <button class="btn waves-effect">Contact Us</button>
                 </a>
-
             </div>
         </div>
     </div>
@@ -223,46 +226,25 @@
             </div>
         </div>
     </div>
-<div class="contactForm">
-    <form class="col s6" action="https://getsimpleform.com/messages?form_api_token=05efff79e586b814240263b7d337461d" method="post">
-        <input type='hidden' name='redirect_to' value='http://127.0.0.1:5500/index.html' />
-        <h3 class="center">Contact Form</h3>
-        <div class="row">
-            <div class="input-field col s6">
-                <input placeholder="First Name" id="first_name" type="text" class="validate">
-            </div>
-            <div class="input-field col s6">
-                <input id="last_name" type="text" class="validate" placeholder="Last name">
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="input-field col s12">
-                <input id="email" type="email" class="validate" placeholder="Email">
-            </div>
-        </div>
-        <div class="row">
-            <div class="input-field col s12">
-                <input id="last_name" type="text" class="validate" placeholder="Message">
-            </div>
-        </div>
-        <div class="submitButton center">
-            <button data-target="modal1" class="btn waves-effect waves-light btn modal-trigger" type="submit" name="action">Submit
-            <i class="material-icons right">send</i>
-        </button>
-        </div>
-    </form>
-    <!-- Modal Structure -->
-    <div id="modal1" class="modal center">
-        <div class="modal-content">
-            <h4>Thank you!</h4>
-            <p>We'll be in contact shortly.</p>
-        </div>
-        <div class="modal-footer center">
-            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Ok</a>
-        </div>
+    <h3 class="center">Contact form</h3>
     </div>
-</div>
-<script src="script.js"></script>
+    <div class="contactForm" id="3">
+        <form action="https://liveformhq.com/form/429eb91a-7173-4052-baf2-b1708372a07b" method="POST" accept-charset="utf-8">
+            <input type="hidden" name="_utf8" value="✓">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name"> <br />
+        
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email"> <br />
+
+
+            <label for="email">Message</label>
+            <input type="text" id="message" name="message"> <br />
+                <div class="center">
+                    <button onclick="M.toast({html: 'Thank you for getting in touch!'})" class="btn toast waves-effect" type="submit" name="action">Submit
+                </div>
+            </form>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -152,17 +152,14 @@ h6 {
   display: flex;
   justify-content: center;
 }
-/* label focus color */
-.input-field input:focus + label {
-  color: yellow !important;
-}
-/* label underline focus color */
-.row .input-field input:focus {
-  border-bottom: 1px solid yellow !important;
-  box-shadow: 0 1px 0 0 yellow !important;
+form {
+  width: 60% !important;
+  padding-bottom: 50px;
 }
 
-form {
-  width: 80% !important;
-  padding-bottom: 50px;
+#toast-container {
+  top: auto !important;
+  right: auto !important;
+  bottom: 70%;
+  left: 41.5%;
 }

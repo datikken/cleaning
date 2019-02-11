@@ -1,4 +1,9 @@
-document.addEventListener("DOMContentLoaded", function() {
-  var elems = document.querySelectorAll(".modal");
-  var instances = M.Modal.init(elems);
-});
+if (
+  /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+    navigator.userAgent
+  )
+) {
+  $("#contactLink").attr("href", "tel:7778921843");
+} else {
+  $("#contactLink").attr("href", "#3");
+}
